@@ -1,0 +1,126 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.Container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: 23px auto;
+    border-radius: 12px;
+    width: 80%;
+    padding: 34px;
+    background-image: url(piyono.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+.songItemContainer{
+    margin-top: 74px;
+}
+.bottom{
+   
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.icons{
+    margin-top:20px;
+}
+
+#myprogressbar{
+    width: 90vw;
+    cursor: pointer;
+    
+}
+
+.songItem img{
+    height: 35px;
+    width: 40px;
+    margin: 0 23px 0;
+    border-radius: 34px;
+
+    
+}
+.songItem{
+    height: 40px;
+    width:60%;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 34px;
+ 
+}
+
+    
+
+.timestamp{
+    margin: 0 23px;
+    cursor: pointer;
+}
+.SongImfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.SongImfo img{
+    opacity: 1;
+    transition: opacity  0.4s  ease-in;
+}
