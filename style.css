@@ -1,126 +1,52 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=varela+Round&display=swap');
 body{
-    background-color: antiquewhite;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-
-}
-
-nav{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-nav ul{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    height: 70px;
     background-color: black;
-    color: white;
 }
-nav ul li{
-    padding: 0 12px;
+#calculator{
+    width: 400px;
+    height:570px;
+    margin:100px auto;
+    background-color:#797373;
+    color: #fff;
+    border-radius: 10px;
+    border-radius: 20px;
+    
+    box-shadow: 10px 10px 15px .1px black;
 }
-.brand img{
-    width: 44px;
-    padding: 0 8px;
-}
-.brand{
-    display: flex;
-    align-items: center;
+.display{
+    width: 100%;
+    height: 80px;
+    background-color: #4e5a49;
+    font-size: 36px;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-family: cursive;
 }
-.Container{
-    min-height: 72vh;
-    background-color: black;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    margin: 23px auto;
-    border-radius: 12px;
-    width: 80%;
-    padding: 34px;
-    background-image: url(piyono.jpg);
-    background-size: cover;
-    background-position: center;
-   
+.buttons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 20px;
 }
-.songItemContainer{
-    margin-top: 74px;
-}
-.bottom{
-   
-    height: 100px;
-    background-color: black;
-    color: white;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
-
-}
-.icons{
-    margin-top:20px;
-}
-
-#myprogressbar{
-    width: 90vw;
+button{
+    width: 100%;
+    height: 70px;
+    font-size: 24px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
-    
+    filter: drop-shadow(10px 10px 10px rgb(19,24,19));
+    font-weight: bolder;
 }
-
-.songItem img{
-    height: 35px;
-    width: 40px;
-    margin: 0 23px 0;
-    border-radius: 34px;
-
-    
+button:hover{
+    transform: scale(1.05);
 }
-.songItem{
-    height: 40px;
-    width:60%;
-    display: flex;
-    background-color: white;
-    color: black;
-    margin: 12px 0;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 34px;
- 
-}
-
-    
-
-.timestamp{
-    margin: 0 23px;
-    cursor: pointer;
-}
-.SongImfo{
-    position: absolute;
-    left: 10vw;
-    font-family: 'Courier New', Courier, monospace;
-}
-.SongImfo img{
-    opacity: 1;
-    transition: opacity  0.4s  ease-in;
+.operator{
+    background-color: #f39c12;
+    color: #fff;
 }
